@@ -1,0 +1,178 @@
+body{
+            background-color: blanchedalmond;
+            font-size: 14px;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #box-content{
+            display: flex;
+            align-content: center;
+        }
+        /*Navigation bar*/
+        header{
+            position: fixed;
+            width:100%;
+            min-height: 100px;
+            padding: 0 25px;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #header-img{
+            width: 200px;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        nav{
+            float: right;
+            text-align: center;
+            text-decoration: none;
+            min-height: 100px;
+            padding: 12px 13px;
+            margin: 0 auto;
+            display: block;
+        }
+        ul{
+            list-style: none;
+            display: inline-block;
+            text-align: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #card-background{
+            background-color: cornsilk;
+            width: 200px;
+            border-radius: 8%;
+        }
+        /*The main header at the centre*/
+        #food{
+            font-family: "Caveat", sans-serif;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10rem;
+        }
+        /*Cards*/
+        #box-content{
+            display: flex;
+            padding: 2rem;
+            margin: 1rem;
+            width: 40%;
+            height: 60%;
+            align-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2rem;
+        }
+        .flashcard{
+            border-radius: 5%;
+            border: orange;
+            border-radius: 22px;
+            background: #e0e0e0;
+            box-shadow:  30px 30px 67px #bababa, 
+            -30px -30px 67px #ffffff;
+        }
+        .image-card{
+            width: 25em;
+            border-radius: 5%;
+        }
+        /*Buttons*/
+        #button{
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+        }
+        .buttons{
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition-duration: 0.2s;
+            cursor:pointer;
+            padding: 15px 30px;
+            font-family: monospace;
+            background-color: blanchedalmond;
+        }
+        #button1{
+            border:3px solid darkblue;
+        }
+        #button2{
+            border:3px solid darkred;
+        }
+        #button3{
+            border:3px solid indigo;
+        }
+        /*For hover animation*/
+        #button1:hover{
+            background-color: darkblue;
+            color:blanchedalmond;
+        }
+        #button2:hover{
+            background-color: darkred;
+            color:blanchedalmond;
+        }
+        #button3:hover{
+            background-color: indigo;
+            color: blanchedalmond;
+        }
+        /*Shop form*/
+        #shop{
+               padding-top: 20vw;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 14rem;
+               background-image: linear-gradient(125deg, rgb(33, 71, 79), rgb(153, 65, 26)),
+               url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog-cdn.healthifyme.com%2Fblog%2Fwp-content%2Fuploads%2F2018%2F07%2F17195604%2FIndian-foods-feature.jpeg&f=1&nofb=1);
+        }
+        #submit{
+            border-radius: 5%;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        /*Video*/
+        #video-watch{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #video{
+            max-width: 600px;
+            width: 100%;
+        }
+        /*Contact*/
+        #contact{
+            background-color: beige;
+            display: grid;
+            grid-template-columns: repeat(2,1fr)
+        }
+        /*Media queries*/
+        @media (max-width: 700px) {
+            #box-content{
+                flex-wrap: wrap;
+            }
+        }
+        @media (max-width: 600px) {
+            header{
+                flex-wrap: wrap;
+            }
+            nav{
+                flex-direction: column;
+                margin: auto;
+                width: 100%;
+                padding: 10px;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                text-align: center;
+            }
+        }
+        @media (max-width: 650px) {
+            .flashcard{
+                flex-direction: column;
+                margin-bottom: 15px;
+                margin: auto;
+                max-width: 200px;
+                width: 100%;
+            }
+        }
